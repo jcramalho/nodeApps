@@ -1,0 +1,19 @@
+html
+    head
+        meta(charset='UTF-8')
+        link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+    body
+        div(class='w3-container w3-blue w3-round')
+            h2 Registo de um aluno
+        form(action='/processaForm' method='GET' class='w3-container')
+            label(for='nome') Nome:
+            input(type='text' name='nome' maxlength='30' id='nome' class='w3-input w3-border')
+            br
+            label(for='numero') Número:
+            input(type='text' name='numero' id='numero' class='w3-input w3-border')
+            br
+            label(for='curso') Curso:
+            input(type='text' name='curso' id='curso' class='w3-input w3-border') 
+            br
+            input(type='submit' value='Enviar' class='w3-btn w3-blue')
+            
