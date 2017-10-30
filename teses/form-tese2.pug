@@ -1,0 +1,48 @@
+html
+    head
+        meta(charset='UTF-8')
+        link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+    body
+        div(class='w3-container w3-blue w3-round')
+            h2 Registo de uma arguição
+        form(action='/processaForm' method='POST' enctype='multipart/form-data' class='w3-container')
+            fieldset
+                legend Informação do Aluno
+                label(for='nome') Nome:
+                input(type='text' name='nome' maxlength='30' id='nome' class='w3-input w3-border')
+                br
+                label(for='ident') Número:
+                input(type='text' name='ident' id='ident' class='w3-input w3-border')
+                br
+                label(for='curso') Curso:
+                input(type='text' name='curso' id='curso' class='w3-input w3-border') 
+                br
+                label(for='instituicao') Instituição:
+                input(type='text' name='instituicao' id='instituicao' class='w3-input w3-border') 
+                br
+            fieldset
+                legend Informação da Tese
+                label(for='titulo') Título:
+                input(type='text' name='titulo' maxlength='30' id='titulo' class='w3-input w3-border')
+                br
+                label(for='data') Data:
+                input(type='text' name='data' maxlength='30' id='data' class='w3-input w3-border')
+                br
+                label(for='data') Ficheiro:
+                input(type='file' name='fich' maxlength='30' id='fich' class='w3-input w3-border')
+                br
+            fieldset
+                legend Informação do Docente
+                label(for='dnome') Nome:
+                input(type='text' name='dnome' maxlength='30' id='dnome' class='w3-input w3-border')
+                br
+                label(for='dinstituicao') Instituição:
+                input(type='text' name='dinstituicao' id='dinstituicao' class='w3-input w3-border') 
+                br
+                <input class="w3-radio" type="radio" name="funcao" value="presidente" checked/>
+                <label>Presidente</label>
+                <input class="w3-radio" type="radio" name="funcao" value="vogal">
+                <label>Vogal</label>
+            input(type='submit' value='Enviar' class='w3-btn w3-blue')
+            
+            
